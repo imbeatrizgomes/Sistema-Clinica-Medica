@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AvaliarConsultaController"
+      alignment="CENTER"
+      spacing="20">
+
+    <padding>
+        <Insets top="30" left="30" right="30" bottom="30"/>
+    </padding>
+
+    <GridPane hgap="8"
+          vgap="15"
+          alignment="CENTER">
+
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" prefWidth="130"/>
+            <ColumnConstraints halignment="LEFT" prefWidth="260"/>
+        </columnConstraints>
+
+        <Label text="Avaliar Consulta"
+               GridPane.columnSpan="2"
+               GridPane.halignment="CENTER"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;">
+            <GridPane.margin>
+                <Insets bottom="15"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Consulta:" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="comboConsulta"
+                  GridPane.rowIndex="1"
+                  GridPane.columnIndex="1"
+                  prefWidth="260"/>
+
+        <Label text="Nota (1 a 5):" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="comboNota"
+                  GridPane.rowIndex="2"
+                  GridPane.columnIndex="1"
+                  prefWidth="260"/>
+
+        <Label text="Comentário:" GridPane.rowIndex="3"/>
+        <TextArea fx:id="campoComentario"
+                  GridPane.rowIndex="3"
+                  GridPane.columnIndex="1"
+                  prefRowCount="4"
+                  prefWidth="260"/>
+
+        <Button text="Enviar Avaliação"
+                GridPane.rowIndex="4"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"
+                onAction="#avaliar">
+            <GridPane.margin>
+                <Insets top="20"/>
+            </GridPane.margin>
+        </Button>
+
+        <Button text="Voltar"
+                GridPane.rowIndex="5"
+                GridPane.columnSpan="2"
+                GridPane.halignment="CENTER"
+                onAction="#voltar"/>
+    </GridPane>
+
+</VBox>

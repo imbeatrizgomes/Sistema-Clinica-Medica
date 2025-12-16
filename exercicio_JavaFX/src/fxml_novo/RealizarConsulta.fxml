@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="controller.RealizarConsultaController"
+          hgap="15" vgap="15">
+
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" prefWidth="120"/>
+        <ColumnConstraints prefWidth="300"/>
+    </columnConstraints>
+
+    <Label text="Realizar Consulta"
+           GridPane.columnSpan="2"
+           GridPane.halignment="CENTER"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;">
+        <GridPane.margin>
+            <Insets bottom="18"/>
+        </GridPane.margin>
+    </Label>
+
+    <Label text="Consulta:" GridPane.rowIndex="1"/>
+    <ComboBox fx:id="comboConsultas"
+              GridPane.rowIndex="1"
+              GridPane.columnIndex="1"/>
+
+    <Label text="Sintomas:" GridPane.rowIndex="2"/>
+    <TextArea fx:id="campoSintomas"
+              GridPane.rowIndex="2"
+              GridPane.columnIndex="1"
+              prefRowCount="3"/>
+
+    <Label text="Tratamento:" GridPane.rowIndex="3"/>
+    <TextArea fx:id="campoTratamento"
+              GridPane.rowIndex="3"
+              GridPane.columnIndex="1"
+              prefRowCount="3"/>
+
+    <Button text="Finalizar Consulta"
+            GridPane.rowIndex="4"
+            GridPane.columnSpan="2"
+            GridPane.halignment="CENTER"
+            onAction="#finalizarConsulta"/>
+
+    <Button text="Voltar"
+            GridPane.rowIndex="5"
+            GridPane.columnSpan="2"
+            GridPane.halignment="CENTER"
+            onAction="#voltar"/>
+
+</GridPane>

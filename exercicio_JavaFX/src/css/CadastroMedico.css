@@ -1,0 +1,17 @@
+.cadastro {
+    -fx-background-color: linear-gradient(to right, #b8d8ba, #d5f5e3);
+}
+
+.titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 180px;
+}

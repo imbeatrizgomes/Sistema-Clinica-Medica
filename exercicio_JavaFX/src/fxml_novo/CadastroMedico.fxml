@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.CadastroMedicoController"
+            style="-fx-background-color: #f5f5f5;">
+
+    <center>
+        <GridPane hgap="15" vgap="15" alignment="CENTER">
+
+            <padding>
+                <Insets top="30" right="40" bottom="30" left="40"/>
+            </padding>
+
+            <Label text="Cadastro de Médico"
+                   GridPane.columnSpan="2"
+                   GridPane.halignment="CENTER"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <Label text="Nome:" GridPane.rowIndex="1"/>
+            <TextField fx:id="campoNome"
+                       GridPane.rowIndex="1"
+                       GridPane.columnIndex="1"/>
+
+            <Label text="Especialidade:" GridPane.rowIndex="2"/>
+            <TextField fx:id="campoEspecialidade"
+                       GridPane.rowIndex="2"
+                       GridPane.columnIndex="1"/>
+
+            <Label text="Plano atendido:" GridPane.rowIndex="3"/>
+            <ComboBox fx:id="comboPlano"
+                      GridPane.rowIndex="3"
+                      GridPane.columnIndex="1"
+                      prefWidth="200"/>
+
+            <Label text="E-mail:" GridPane.rowIndex="4"/>
+            <TextField fx:id="campoEmail"
+                       GridPane.rowIndex="4"
+                       GridPane.columnIndex="1"/>
+
+            <Label text="Senha:" GridPane.rowIndex="5"/>
+            <PasswordField fx:id="campoSenha"
+                           GridPane.rowIndex="5"
+                           GridPane.columnIndex="1"/>
+
+            <Label text="Matrícula:" GridPane.rowIndex="6"/>
+            <TextField fx:id="campoMatricula"
+                       GridPane.rowIndex="6"
+                       GridPane.columnIndex="1"/>
+
+            <Button text="Cadastrar"
+                    GridPane.rowIndex="7"
+                    GridPane.columnSpan="2"
+                    GridPane.halignment="CENTER"
+                    onAction="#cadastrar"/>
+
+            <Button text="Voltar"
+                    GridPane.rowIndex="8"
+                    GridPane.columnSpan="2"
+                    GridPane.halignment="CENTER"
+                    onAction="#voltar"/>
+
+        </GridPane>
+    </center>
+
+</BorderPane>

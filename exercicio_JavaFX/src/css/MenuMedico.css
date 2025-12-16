@@ -1,0 +1,13 @@
+.menu {
+    -fx-background-color: linear-gradient(to right, #a9dfbf, #d5f5e3);
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-pref-width: 220px;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.MenuMedicoController"
+      spacing="20"
+      alignment="CENTER"
+      style="-fx-background-color: #e9f7ef;">
+
+    <Label text="Portal do Médico"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Button text="Realizar Consulta"
+            onAction="#abrirRealizarConsulta"
+            prefWidth="220"/>
+
+    <Button text="Meus Dados"
+            onAction="#abrirMeusDados"
+            prefWidth="220"/>
+
+    <Button text="Voltar ao Menu Principal"
+            onAction="#voltarMenuPrincipal"
+            prefWidth="200"/>
+</VBox>

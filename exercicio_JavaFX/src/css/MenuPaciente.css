@@ -1,0 +1,15 @@
+.menu {
+    -fx-background-color: #d5f5e3;
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 20;
+}
+
+.button {
+    -fx-font-size: 16px;
+    -fx-pref-width: 200px;
+    -fx-margin: 10;
+}

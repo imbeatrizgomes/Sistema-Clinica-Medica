@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.MedicosRedeController"
+      spacing="15"
+      alignment="CENTER">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="Médicos Disponíveis"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <ListView fx:id="listaMedicos"
+              prefHeight="250"
+              prefWidth="400"/>
+
+    <Button text="Voltar"
+            onAction="#voltar"/>
+
+</VBox>

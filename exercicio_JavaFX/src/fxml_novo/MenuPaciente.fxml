@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.MenuPacienteController"
+      spacing="15"
+      alignment="CENTER">
+
+    <padding>
+        <Insets top="30" bottom="30" left="30" right="30"/>
+    </padding>
+
+    <Label text="Portal do Paciente"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <Button text="Médicos da Rede" onAction="#verMedicos"/>
+    <Button text="Agendar Consulta" onAction="#agendarConsulta"/>
+    <Button text="Cancelar Consulta" onAction="#cancelarConsulta"/>
+    <Button text="Avaliar Consulta" onAction="#avaliarConsulta"/>
+    <Button text="Minhas Consultas" onAction="#minhasConsultas"/>
+    <Button text="Alterar Meus Dados" onAction="#alterarDados"/>
+    
+
+    <Button text="Voltar ao Menu Principal"
+            onAction="#voltarMenuPrincipal"/>
+
+</VBox>

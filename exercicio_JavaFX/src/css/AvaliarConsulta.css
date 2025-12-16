@@ -1,0 +1,17 @@
+.avaliar {
+    -fx-background-color: linear-gradient(to right, #fdebd0, #fad7a0);
+}
+
+.titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 180px;
+}

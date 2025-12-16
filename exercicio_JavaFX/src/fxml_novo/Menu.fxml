@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.MenuController">
+
+    <!-- LADO AZUL -->
+    <left>
+        <VBox spacing="20" styleClass="menu-lateral">
+            <padding>
+                <Insets top="40" left="20" right="20"/>
+            </padding>
+
+            <Button text="Cadastrar Paciente"
+        		onAction="#abrirCadastroPaciente"/>
+		<Button text="Cadastrar Médico"
+        	onAction="#abrirCadastroMedico"/>
+
+        </VBox>
+    </left>
+
+    <!-- LADO BRANCO -->
+    <center>
+        <VBox spacing="30" alignment="CENTER">
+            <Label text="Bem-vindo ao sistema da clínica"
+                   styleClass="titulo"/>
+
+           <Button text="Portal do Paciente"
+       	 	onAction="#abrirLoginPaciente"/>
+		<Button text="Portal do Médico"
+        	onAction="#abrirLoginMedico"/>
+
+
+        </VBox>
+    </center>
+
+</BorderPane>

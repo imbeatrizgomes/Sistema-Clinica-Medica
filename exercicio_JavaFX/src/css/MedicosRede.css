@@ -1,0 +1,9 @@
+.tela {
+    -fx-background-color: #f2f2f2;
+}
+
+.titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 15;
+}
